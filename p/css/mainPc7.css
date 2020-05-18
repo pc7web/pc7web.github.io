@@ -1,14 +1,8 @@
-<!--  This css for website Don't make changes on it  -->
-
-<!-- This css is for hide(stop) header drawer( Theme change button like classic..    ) -->
-
 #header .header-drawer.open {
     height: 0;
     visibility: hidden;
     display: none;
 }
-
-<!-- This css for Dark mode button But is in under work -->
 
 .dark-mode {
   background-color: black;
@@ -19,8 +13,6 @@ float: left; margin-left: -80px; background: #fff; position: absolute; -moz-bord
 
 sharebox .wdt {
 float: left; clear: left; padding: 5px; }
-
-<!-- This css for animated css button -->
   
   }
   .container{
@@ -82,9 +74,7 @@ float: left; clear: left; padding: 5px; }
    }
    
    
-<!-- ######################### This css is use for pages ###################### -->
-
-<!-- This css for floating animation and all background div (body given by blogger for website pages or post)-->
+/*  This css is use for pages  */
 
 #bgDivPr
 	{
