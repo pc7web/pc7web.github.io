@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test1</title>
+
+	<!-- <meta http-equiv="refresh" content="2"> -->
+	<!-- <style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			background-color: lightgreen;
+		}
+		div{
+			height: 100px;
+			background-image: linear-gradient(to bottom right, red,orange,green,blue,yellow,indigo,violet);
+
+			/*border: 2px;*/
+			/*border-color: red;*/
+
+		}
+		div h2{
+			color: blue;
+		}
+		div h2:hover{
+			color: red;
+		}
+		div b{
+			color: blue;
+
+		}
+	</style> -->
+</head>
+<body><!-- 
+	<iframe id="codeShowPr" height="150vh" width="100%" src="code1.html"></iframe>
+ -->
+	<input type="text" id="codeShowPr" height="150vh" width="100%" src="code1.html">
+
+<script type="text/javascript">
+	function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("codeShowPr");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  // alert("Copied the text: " + copyText.value);
+}
+</script>
+<button onclick="myFunction()">Copy text</button>
+</body>
+</html>
