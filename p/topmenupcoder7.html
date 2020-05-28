@@ -1,0 +1,39 @@
+    <div class='top-bar'>
+
+    <div class='top-bar-wrapper row'>
+      <b:section class='top-bar-social blue' id='header social widget' maxwidgets='1' name='Top Social Widget' showaddelement='no'>
+<b:widget id='LinkList230' locked='true' title='Social Media Icons' type='LinkList' version='1'>
+  <b:includable id='main'>
+            <div class='widget-content'>
+              <ul id='social'>
+                <b:loop values='data:links' var='link'>
+                  <li><a expr:class='data:link.name' expr:href='data:link.target' expr:title='data:link.name'/></li>
+                </b:loop>
+              </ul>
+            </div>
+          </b:includable>
+</b:widget>
+</b:section>
+  <div class='top-bar-menu'>
+
+
+<div class='top-menu'>
+  <b:section class='top-menu' id='top-menu' maxwidgets='1' showaddelement='yes'>
+    <b:widget id='LinkList940' locked='true' title='Main Menu' type='LinkList' version='1'>
+      <b:includable id='main'>
+          <div class='widget-content'>
+            <ul id='nav1' itemscope='' itemtype='http://schema.org/SiteNavigationElement'> 
+              <b:loop values='data:links' var='link'>
+                <li itemprop='name'><a expr:href='data:link.target' itemprop='url'><data:link.name/></a></li>
+              </b:loop>
+           </ul>
+         
+
+          </div>
+        </b:includable>
+    </b:widget>
+  </b:section>
+</div></div>
+    </div>
+
+  </div>
