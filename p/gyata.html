@@ -1,0 +1,326 @@
+<html><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style><head>
+					<meta name="viewport" content="width=device-width,initial-scale=1.0">
+					<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+					<link rel="stylesheet" href="/nabble.css?v=29" type="text/css">
+	<link rel="stylesheet" href="/template/NamlServlet.jtp?macro=site_style" type="text/css">
+<style type="text/css">
+@media (max-width: 600px) {
+#search-box,#topic-search-box{margin:1em 0}
+td.pin-column img{display:none}
+}
+</style>
+					<script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/assets/jquery/jquery-1.9.1.min.js"></script>
+	<script>$.browser = {}</script>
+	<script src="/util/nabbledropdown-2.4.1.js" type="text/javascript"></script>
+	<script src="/template/NamlServlet.jtp?macro=javascript_library&amp;v=102" type="text/javascript"></script>
+					<title>Gyata</title>
+			<style type="text/css">
+	table.main {
+		width:100%;
+		border-width: 1px;
+		border-style: solid;
+		border-collapse:collapse;
+	}
+	table.main td {
+		padding:.1em;
+		height:2.2em;
+	}
+	tr.header-row td {
+		font-weight:bold;
+		padding: .1em .2em;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+	}
+	@media (max-width: 600px) {
+		table.main td{padding-left:0 !important;font-size:95%}
+		tr.header-row td{font-size:80%}
+		td.column{white-space:normal !important}
+		span.column.nowrap{white-space:normal}
+		span.pages{margin: 2em 0}
+		span.pages a{padding:.2em .6em}
+		img.avatar{display:none}
+		img.online{opacity:0}
+	}
+	</style>
+			<meta name="description" content="Gyata forum. This forum is for students. To share problems and find the solution.">
+			<meta name="keywords" content="gyata, forum, for, students, share, problems, find, solution, board, community">
+			<style type="text/css">
+			#search-box-dropdown {
+				text-align:left;
+				position:absolute;
+				display:none;
+				z-index:1000;
+				overflow:hidden;
+			}
+		</style>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var $sdd = $('#search-box-dropdown');
+				var $sb = $('#search-input');
+				var $form = $sb.parent();
+				var timeout;
+				$(document).click(function(o){
+					var $target = $(o.target);
+					if ($target.parents().hasClass('search-box-dropdown')) {
+						clearTimeout(timeout);
+						$sb.focus();
+					}
+				});
+				$sb.focusin(function(e) {
+					$sdd.css('left', $sb.position().left - 5);
+					$sdd.width($sb.outerWidth() + 10);
+					$sdd.show();
+				});
+				$sb.focusout(function() {
+					timeout = setTimeout(function() {
+						$sdd.hide();
+					},250);
+				});
+				
+			});
+		</script><style type="text/css">
+			div.action-link {
+				float:left;
+				white-space:nowrap;
+				margin:.7em .3em;
+			}
+		</style><script type="text/javascript">
+			Nabble.nViews = function(id, views) {
+				var $v = $('#v'+id);
+				var pos = views=='1'?0:1;
+				var t = $v.html()? $v.html().split('|')[pos]:'';
+				$v.html(t == ''? views : t.replace(/%1/g,views)).show();
+			};
+		</script>
+					<script type="text/javascript">
+		Nabble.setFontSize();
+		
+	</script>
+	<script type="text/javascript">
+		if (Nabble.analytics) Nabble.analytics();
+	</script>
+	<!-- Start Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-91855-9', 'auto', 'nabble');
+		ga('nabble.send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+				</head>
+				<body>
+					<div id="notice" class="notice rounded-bottom"></div>
+					<div class="nabble macro_view_standard" id="nabble">
+						
+			
+			<div class="top-bar">
+		<div class="breadcrumbs" style="float:left">
+			<span id="breadcrumbs" class="weak-color">
+		
+				<a href="/">Gyata</a>
+	</span>
+		</div>
+		<div style="text-align:right;">
+			<span style="white-space:nowrap;" id="nabble-user-header"><span id="user-dd"><span id="usrdd" class="dropdown"><a href="javascript:void(0)">Pcoder7</a> <img src="/images/more.png" width="10" height="10"><table class="light-bg-color medium-border-color drop-shadow" style="margin-top:1px;"><tbody><tr id="_loadingusrdd" style="display:none"><td class="dropdown-simple-row"><span id="_loadingSpanusrdd">Loading...</span></td></tr><tr id="myPosts"><td style="border:none"><a href="/template/NamlServlet.jtp?macro=user_nodes&amp;user=1">My posts</a></td></tr><tr id="personalSettings"><td style="border:none"><a href="/template/NamlServlet.jtp?macro=user_profile">Account settings</a></td></tr><tr id="adminNotice" style="display:none"><td style="border:none"><a href="javascript: void Nabble.showAdminNotice()">Show Nabble notice</a></td></tr><tr id="logout"><td style="border:none"><a href="javascript: void Nabble.logout()">Log out</a></td></tr></tbody></table></span></span></span>
+	<script type="text/javascript">Nabble.userHeader();</script>
+		</div>
+	</div>
+			
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			if (Nabble.appnotice) {
+				$('#creation-ad').slideDown();
+				Nabble.setVar('appnotice',null);
+			}
+		});
+	</script>
+
+	<div id="creation-ad" class="app-notice light-border-color info-message" style="display:none">
+				<div class="big-title second-font">Congratulations!</div>
+	Your forum has been successfully created.<br>
+	Please check your inbox now and activate your account in order to have access to all features.<br>
+	<button class="toolbar action-button" onclick="$('#creation-ad').slideUp();" style="margin:.5em 1em 0">
+		Close this message
+	</button>
+			</div>
+			<script type="text/javascript">
+				/* Fix for widget creation (weebly)  */
+				if (Nabble.getParent().nabbleinfo && !Nabble.getParent().nabbleinfo.what) {
+					Nabble.getParent().nabbleinfo.what = 'forum';
+				}
+			</script>
+			<div id="nabble-newsflash" class="info-message" style="display:none;padding:.5em;margin-bottom:.5em"></div>
+	
+			<div id="admin-notice" class="info-message" style="display:none;padding:.5em;margin-bottom:.5em"></div>
+	
+			<div id="forum-header">
+			<h1 id="forum-title" class="app-title-1 adbayes-content">Gyata</h1>
+			<div id="description-box" class="adbayes-content">
+				
+				This forum is for students.
+<br>To share problems and find the solution.
+
+	
+	
+			</div>
+			<div id="search-box" class="search-box">
+				<form action="/template/NamlServlet.jtp">
+		<input type="hidden" name="macro" value="search_page">
+		<input type="hidden" name="node" value="1">
+		
+		
+		
+		<input id="search-input" name="query" size="18" class="medium-border-color">
+		<div id="search-box-dropdown" class="search-box-dropdown light-bg-color drop-shadow border1 medium-border-color rounded-bottom">
+		
+		<div style="margin:.5em;line-height:2em">
+			<input class="toolbar action-button float-right" type="submit" value="Search">
+			<a href="/template/NamlServlet.jtp?macro=adv_search_page&amp;node=1" rel="nofollow" style="font-size:80%">Advanced Search</a>
+		</div>
+	</div>
+	</form>
+			</div>
+		</div>
+			<div class="action-link">
+		<img src="/images/icon_post_message.png" class="image16">
+		<a href="/template/NamlServlet.jtp?macro=new_topic&amp;node=1" title="Post new message in Gyata" rel="nofollow">New Topic</a>
+	</div>
+			
+			<div class="action-link" style="margin-left:.6em">
+				<img src="/images/people_sm.png" class="image16">
+				<a href="/template/NamlServlet.jtp?macro=app_people&amp;node=1" rel="nofollow">People</a>
+			</div>
+			<div class="action-link" style="margin-left:.6em">
+		<img src="/images/gear.png" class="image16">
+		<span id="dd_appdropdown"><span id="appdropdown" class="dropdown"><a href="javascript:void(0)" title="Click for more options">Options</a> <img src="/images/more.png" width="10" height="10"><table class="light-bg-color medium-border-color drop-shadow" style="margin-top:1px;"><tbody><tr id="_loadingappdropdown" style="display:none"><td class="dropdown-simple-row"><span id="_loadingSpanappdropdown">Loading...</span></td></tr><tr id="subscriptionLink"><td style="border:none"><a href="/template/NamlServlet.jtp?macro=subscribe&amp;node=1" rel="nofollow">Subscribe via email</a></td></tr><tr id="postByEmail" style="display:none"><td style="border:none"><a href="/template/NamlServlet.jtp?macro=post_by_email_page&amp;node=1" rel="nofollow">Post by email</a></td></tr><tr class="dropdown-separator"><td class="action-separator medium-border-color">&nbsp;</td></tr><tr id="sm0-id" style="display:none" submenu="sm0"><td style="border:none"><a href="javascript:void(0)">Application</a></td></tr><tr id="sm1-id" style="display:none" submenu="sm1"><td style="border:none"><a href="javascript:void(0)">Structure</a></td></tr><tr id="sm2-id" style="display:none" submenu="sm2"><td style="border:none"><a href="javascript:void(0)">Users</a></td></tr><tr class="dropdown-separator"><td class="action-separator medium-border-color">&nbsp;</td></tr><tr id="embeddingOptions" style="display:none"><td style="border:none"><a href="/embed/EmbedOptions.jtp?node=1" rel="nofollow">Embedding options</a></td></tr><tr id="downloadBackup" style="display:none"><td style="border:none"><a href="/template/NamlServlet.jtp?macro=download_backup_page" rel="nofollow">Download backup</a></td></tr><tr id="deleteApp" style="display:none"><td style="border:none"><a href="/template/NamlServlet.jtp?macro=delete_app&amp;node=1" rel="nofollow">Delete</a></td></tr><tr id="openShell" style="display:none"><td style="border:none">null</td></tr></tbody></table><ul id="sm0" class="light-bg-color medium-border-color drop-shadow"><li id="editNameDescription" style="display:none"><a href="/template/NamlServlet.jtp?macro=edit_app&amp;node=1" rel="nofollow">Edit name &amp; description</a></li><li id="changeType" style="display:none"><a href="/template/NamlServlet.jtp?macro=change_app_type&amp;node=1" rel="nofollow">Change application type</a></li><li id="changeAppearance" style="display:none"><a href="/template/NamlServlet.jtp?macro=change_appearance" rel="nofollow">Change appearance</a></li><li id="changeDomainName" style="display:none"><a href="/forum/ChangeDomainName.jtp?site=287916" rel="nofollow">Change domain name</a></li><li id="mailingListSettings" style="display:none"><a href="/template/NamlServlet.jtp?macro=mailing_list_archive_settings&amp;node=1" rel="nofollow">Mailing list archive settings</a></li><li id="changeLanguage" style="display:none"><a href="/app/Languages.jtp" rel="nofollow">Change language</a></li><li id="changeMetaTags" style="display:none"><a href="/template/NamlServlet.jtp?macro=change_title_and_meta_tags&amp;node=1" rel="nofollow">Change title and meta tags</a></li><li id="addons" style="display:none"><a href="/app/Addons.jtp" rel="nofollow">Extras &amp; add-ons</a></li><li id="useGoogleAnalytics" style="display:none"><a href="/template/NamlServlet.jtp?macro=use_google_analytics" rel="nofollow">Use Google Analytics</a></li></ul><ul id="sm1" class="light-bg-color medium-border-color drop-shadow"><li id="createChildForum" style="display:none"><a href="/template/NamlServlet.jtp?macro=create_sub_app&amp;node=1" rel="nofollow">Create new sub-forum</a></li><li id="managePinnedTopics" style="display:none"><a href="/catalog/ChangePinOrder.jtp?forum=1&amp;what=threads" rel="nofollow">Manage pinned topics</a></li><li id="manageSubApps" style="display:none"><a href="/catalog/ChangePinOrder.jtp?forum=1&amp;what=forums" rel="nofollow">Manage sub-forums</a></li><li id="parentOptions" style="display:none"><a href="/catalog/ChangeParent.jtp?forum=1" rel="nofollow">Change parent</a></li></ul><ul id="sm2" class="light-bg-color medium-border-color drop-shadow"><li id="changePermissions" style="display:none"><a href="/template/NamlServlet.jtp?macro=change_permissions&amp;node=1" rel="nofollow">Change permissions</a></li><li id="manageGroups" style="display:none"><a href="/template/NamlServlet.jtp?macro=manage_users_and_groups" rel="nofollow">Manage users &amp; groups</a></li><li id="manageSubscribers" style="display:none"><a href="/template/NamlServlet.jtp?macro=manage_subscribers&amp;node=1" rel="nofollow">Manage subscribers</a></li><li id="manageBannedUsers" style="display:none"><a href="/template/NamlServlet.jtp?macro=manage_banned_users" rel="nofollow">Manage banned users</a></li></ul></span></span>
+	<script type="text/javascript">
+		var dropdown = new NabbleDropdown("appdropdown", "Options","Click for more options");
+		
+		dropdown.add('subscriptionLink', '\x3Ca href\x3D\"/template/NamlServlet.jtp?macro\x3Dsubscribe&amp;node\x3D1\" rel\x3D\"nofollow\"\x3ESubscribe via email\x3C/a\x3E');
+		dropdown.add('postByEmail', '\x3Ca href\x3D\"/template/NamlServlet.jtp?macro\x3Dpost_by_email_page&amp;node\x3D1\" rel\x3D\"nofollow\"\x3EPost by email\x3C/a\x3E', 'display:none');
+
+		dropdown.addSeparator();
+
+		dropdown.startGroup('Application');
+	dropdown.add('editNameDescription', '\x3Ca href\x3D\"/template/NamlServlet.jtp?macro\x3Dedit_app&amp;node\x3D1\" rel\x3D\"nofollow\"\x3EEdit name & description\x3C/a\x3E', 'display:none');
+			dropdown.add('changeType', '\x3Ca href\x3D\"/template/NamlServlet.jtp?macro\x3Dchange_app_type&amp;node\x3D1\" rel\x3D\"nofollow\"\x3EChange application type\x3C/a\x3E', 'display:none');
+			dropdown.add('changeAppearance', '\x3Ca href\x3D\"/template/NamlServlet.jtp?macro\x3Dchange_appearance\" rel\x3D\"nofollow\"\x3EChange appearance\x3C/a\x3E', 'display:none');
+			dropdown.add('changeDomainName', '\x3Ca href\x3D\"/forum/ChangeDomainName.jtp?site\x3D287916\" rel\x3D\"nofollow\"\x3EChange domain name\x3C/a\x3E', 'display:none');
+			dropdown.add('mailingListSettings', '\x3Ca href\x3D\"/template/NamlServlet.jtp?macro\x3Dmailing_list_archive_settings&amp;node\x3D1\" rel\x3D\"nofollow\"\x3EMailing list archive settings\x3C/a\x3E', 'display:none');
+			dropdown.add('changeLanguage', '\x3Ca href\x3D\"/app/Languages.jtp\" rel\x3D\"nofollow\"\x3EChange language\x3C/a\x3E', 'display:none');
+			dropdown.add('changeMetaTags', '\x3Ca href\x3D\"/template/NamlServlet.jtp?macro\x3Dchange_title_and_meta_tags&amp;node\x3D1\" rel\x3D\"nofollow\"\x3EChange title and meta tags\x3C/a\x3E', 'display:none');
+			dropdown.add('addons', '\x3Ca href\x3D\"/app/Addons.jtp\" rel\x3D\"nofollow\"\x3EExtras & add-ons\x3C/a\x3E', 'display:none');
+			dropdown.add('useGoogleAnalytics', '\x3Ca href\x3D\"/template/NamlServlet.jtp?macro\x3Duse_google_analytics\" rel\x3D\"nofollow\"\x3EUse Google Analytics\x3C/a\x3E', 'display:none');
+	dropdown.endGroup();
+
+		dropdown.startGroup('Structure');
+	dropdown.add('createChildForum', '\x3Ca href\x3D\"/template/NamlServlet.jtp?macro\x3Dcreate_sub_app&amp;node\x3D1\" rel\x3D\"nofollow\"\x3ECreate new sub-forum\x3C/a\x3E', 'display:none');
+			dropdown.add('managePinnedTopics', '\x3Ca href\x3D\"/catalog/ChangePinOrder.jtp?forum\x3D1&amp;what\x3Dthreads\" rel\x3D\"nofollow\"\x3EManage pinned topics\x3C/a\x3E', 'display:none');
+			dropdown.add('manageSubApps', '\x3Ca href\x3D\"/catalog/ChangePinOrder.jtp?forum\x3D1&amp;what\x3Dforums\" rel\x3D\"nofollow\"\x3EManage sub-forums\x3C/a\x3E', 'display:none');
+			dropdown.add('parentOptions', '\x3Ca href\x3D\"/catalog/ChangeParent.jtp?forum\x3D1\" rel\x3D\"nofollow\"\x3EChange parent\x3C/a\x3E', 'display:none');
+	dropdown.endGroup();
+
+		dropdown.startGroup('Users');
+	dropdown.add('changePermissions', '\x3Ca href\x3D\"/template/NamlServlet.jtp?macro\x3Dchange_permissions&amp;node\x3D1\" rel\x3D\"nofollow\"\x3EChange permissions\x3C/a\x3E', 'display:none');
+			dropdown.add('manageGroups', '\x3Ca href\x3D\"/template/NamlServlet.jtp?macro\x3Dmanage_users_and_groups\" rel\x3D\"nofollow\"\x3EManage users & groups\x3C/a\x3E', 'display:none');
+			dropdown.add('manageSubscribers', '\x3Ca href\x3D\"/template/NamlServlet.jtp?macro\x3Dmanage_subscribers&amp;node\x3D1\" rel\x3D\"nofollow\"\x3EManage subscribers\x3C/a\x3E', 'display:none');
+			dropdown.add('manageBannedUsers', '\x3Ca href\x3D\"/template/NamlServlet.jtp?macro\x3Dmanage_banned_users\" rel\x3D\"nofollow\"\x3EManage banned users\x3C/a\x3E', 'display:none');
+	dropdown.endGroup();
+
+		dropdown.addSeparator();
+
+		dropdown.add('embeddingOptions', '\x3Ca href\x3D\"/embed/EmbedOptions.jtp?node\x3D1\" rel\x3D\"nofollow\"\x3EEmbedding options\x3C/a\x3E', 'display:none');
+		dropdown.add('downloadBackup', '\x3Ca href\x3D\"/template/NamlServlet.jtp?macro\x3Ddownload_backup_page\" rel\x3D\"nofollow\"\x3EDownload backup\x3C/a\x3E', 'display:none');
+		dropdown.add('deleteApp', '\x3Ca href\x3D\"/template/NamlServlet.jtp?macro\x3Ddelete_app&amp;node\x3D1\" rel\x3D\"nofollow\"\x3EDelete\x3C/a\x3E', 'display:none');
+
+		
+
+		dropdown.add('openShell', null, 'display:none');
+			
+		dropdown.build('dd_appdropdown');
+		dropdown.loadOnClick('/template/NamlServlet.jtp?macro=app_dropdown_later&node=1&_=' + Math.floor(Math.random()*999999));
+	</script>
+	</div>
+
+			
+			<div style="clear:both"></div>
+	<table class="main medium-border-color">
+		<tbody><tr class="header-row shaded-bg-color">
+				<td class="medium-border-color pin-column nowrap" style="width:24px"></td>
+	<td class="medium-border-color topics-column nowrap" style="">
+				<table class="avatar-table">
+					<tbody><tr>
+						<td class="nowrap" style="font-weight:bold;border:none">
+							Topics
+							<span class="weak-color" style="font-size:80%;margin-right:1.7em">(0)</span>
+						</td>
+					</tr>
+				</tbody></table>
+			</td>
+	<td class="medium-border-color replies-column nowrap" align="center" style="">
+				Replies
+			</td>
+	<td class="medium-border-color nowrap last-post-column" style="">
+				Last Post
+			</td>
+	<td class="medium-border-color views-column nowrap" align="center">
+				Views
+			</td>
+			</tr>
+		
+		<tr>
+					<td></td>
+					<td colspan="10" style="padding:.8em 0">
+						Empty
+					</td>
+				</tr>
+	</tbody></table>
+	<div style="clear:both"></div>
+			
+			<div id="forum-footer" class="forum-footer nowrap">
+			<img src="/images/feeds.png" width="16" height="16" align="absmiddle" alt="feeds">
+			<a href="/template/NamlServlet.jtp?macro=feeds&amp;node=1" rel="nofollow">Feeds</a>
+			<span class="weak-color" style="padding-left:.5em">|</span>
+			Created by <a href="http://gyata.287916.n8.nabble.com/template/NamlServlet.jtp?macro=user_nodes&amp;user=1" rel="nofollow" title="View profile of Pcoder7" class="nowrap no-decoration"><img class="avatar light-border-color" src="/images/avatar24.png" height="24" width="24" alt="Pcoder7" title="Pcoder7"><img src="/images/online.png" class="online1 online invisible" title="User is online" alt="online" style="display: inline;"></a>
+
+	
+	
+	<a href="/template/NamlServlet.jtp?macro=user_nodes&amp;user=1">Pcoder7</a>
+			<span class="weak-color" style="padding-left:.5em">|</span>
+			<span id="v1" style="">12 views</span>
+	
+	
+		</div>
+			
+			<table class="footer-table shaded-bg-color">
+		<tbody><tr>
+			<td class="footer-left weak-color">
+				<a href="http://www.nabble.com/" target="_top">Free forum by Nabble</a>
+	
+			</td>
+			<td class="footer-right">
+				<script>
+		if( window.nbl_disableAdsLink && window.localStorage && !localStorage.nbl_noAds ) {
+			document.write("<a href='javascript:localStorage.nbl_noAds=true;location.reload();'>"+nbl_disableAdsLink+"</a> | ");
+		}
+	</script>
+				<a href="/template/NamlServlet.jtp?macro=macro_viewer&amp;id=view_standard%21nabble%3Aview_standard.naml&amp;base=nabble.view.web.template.ServletNamespace" rel="nofollow">Edit this page</a>
+			</td>
+		</tr>
+	</tbody></table>
+			<script type="text/javascript">
+var scriptUrl = '/template/NamlServlet.jtp?macro=js_page&incViewCount=1&newsflash=&adminNotice=&visitorOnline=&avatarOnline=1&views=1';
+scriptUrl += '&_=' + Math.floor(Math.random()*9999);
+$.getScript(scriptUrl, function() { Nabble.resizeFrames(); });
+</script>
+
+					<a id="not-visited" class="invisible" href="/any-url">x</a> <a id="visited" class="visited-link invisible" href="#">x</a></div>
+					<script src="/trk5.js" async="true"></script>
+	<script src="/trk0.js" async="true"></script>
+					<!-- n8.nabble.com | Site ID = 287916 -->
+				
+			</body><style id="stylus-1" type="text/css" class="stylus">* { animation-duration:0s !important; animation-delay:0s !important; transition-duration: 0s !important; transition-delay:0s !important; } </style></html>
